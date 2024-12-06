@@ -11,6 +11,6 @@ def home_page_view(request, *args, **kwargs):
         "queryset" : queryset.count()
         }
     path = request.path
-    print('path',path)
+    #print('path',path)
     PageVisit.objects.create()
     return render(request, 'home.html', my_context)
